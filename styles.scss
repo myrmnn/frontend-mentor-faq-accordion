@@ -4,6 +4,7 @@ $softViolet: hsl(273, 75%, 66%);
 $softBlue: hsl(240, 73%, 65%);
 
 body {
+  background-color: $softBlue;
   background-image: linear-gradient(to bottom, $softViolet, $softBlue);
   background-repeat: no-repeat;
   background-size: cover;
@@ -24,12 +25,11 @@ body {
 }
 
 .faq {
-  width: calc(100% - 4em);
+  width: 80%;
   background-color: white;
-  padding: 1em;
   border-radius: 20px;
-  margin: 8em auto;
-  padding-top: 5em;
+  margin: 8em auto 1em auto;
+  padding: 5em 1em 1em 1em;
 
   &__title {
     text-align: center;
@@ -39,7 +39,7 @@ body {
 .question {
   display: flex;
   justify-content: space-between;
-  margin: 2em 0;
+  margin: 3em 0;
   transition: color 0.5s ease;
   cursor: pointer;
 
@@ -59,6 +59,7 @@ body {
 
 .arrow {
   height: 10px;
+  transition: transform 0.5s ease;
 }
 
 .rotate {
