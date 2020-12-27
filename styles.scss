@@ -1,73 +1,77 @@
-@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans&display=swap");
 
 $softViolet: hsl(273, 75%, 66%);
 $softBlue: hsl(240, 73%, 65%);
 
 body {
-	background-image: linear-gradient(to bottom, $softViolet, $softBlue);
-	background-repeat: no-repeat;
-	background-size: cover;
-	font-family: 'Kumbh Sans', sans-serif;
-	height: 100vh;
+  background-image: linear-gradient(to bottom, $softViolet, $softBlue);
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: "Kumbh Sans", sans-serif;
 }
 
 .bold {
-	font-weight: 600;
+  font-weight: 600;
 }
 
 .feature__img {
-	position: absolute;
-	top: -27%;
-	left: 46%;
-	z-index: 2;
-	transform: translateX(-50%);
+  position: absolute;
+  top: 7%;
+  left: 46%;
+  z-index: 2;
+  width: calc(100% - 6em);
+  transform: translateX(-50%);
 }
 
 .pair {
-	position: relative;
+  position: relative;
 }
 
 .faq {
-	width: calc(100% - 5em);
-	background-color: white;
-	padding: 1em;
-	border-radius: 20px;
-	position: absolute;
-	top: 55%;
-	left: 50%;
-	transform: translateY(-50%) translateX(-50%);
-	padding-top: 4em;
+  width: calc(100% - 5em);
+  background-color: white;
+  padding: 1em;
+  border-radius: 20px;
+  margin: 8em auto;
+  padding-top: 5em;
 
-	&__title {
-		text-align: center;
-	}
+  &__title {
+    text-align: center;
+  }
+
+  //   &__container {
+  //     min-height: 100vh;
+  //     display: flex;
+  //     justify-content: center;
+  //     align-items: center;
+  //   }
 }
 
 .question {
-	display: flex;
-	justify-content: space-between;
-	margin: 2em 0;
-	transition: color 0.5s ease;
-	cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  margin: 1em 0;
+  transition: color 0.5s ease;
+  cursor: pointer;
 
-	&:hover {
-		color: hsl(14, 88%, 65%);
-	}
+  &:hover {
+    color: hsl(14, 88%, 65%);
+  }
 }
 
 .answer {
-	display: none;
-	color: hsl(240, 6%, 50%);
+  display: none;
+  color: hsl(240, 6%, 50%);
 }
 
 .answer.open {
-	display: block;
+  display: block;
 }
 
 .arrow {
-	height: 10px;
+  height: 10px;
 }
 
 .rotate {
-	transform: rotate(180deg);
+  transform: rotate(180deg);
 }
