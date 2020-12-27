@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans&display=swap');
+
+$softViolet: hsl(273, 75%, 66%);
+$softBlue: hsl(240, 73%, 65%);
+
+body {
+	background-image: linear-gradient(to bottom, $softViolet, $softBlue);
+	background-repeat: no-repeat;
+	background-size: cover;
+	font-family: 'Kumbh Sans', sans-serif;
+	height: 100vh;
+}
+
+.bold {
+	font-weight: 600;
+}
+
+.feature__img {
+	position: absolute;
+	top: -27%;
+	left: 46%;
+	z-index: 2;
+	transform: translateX(-50%);
+}
+
+.pair {
+	position: relative;
+}
+
+.faq {
+	width: calc(100% - 5em);
+	background-color: white;
+	padding: 1em;
+	border-radius: 20px;
+	position: absolute;
+	top: 55%;
+	left: 50%;
+	transform: translateY(-50%) translateX(-50%);
+	padding-top: 4em;
+
+	&__title {
+		text-align: center;
+	}
+}
+
+.question {
+	display: flex;
+	justify-content: space-between;
+	margin: 2em 0;
+	transition: color 0.5s ease;
+	cursor: pointer;
+
+	&:hover {
+		color: hsl(14, 88%, 65%);
+	}
+}
+
+.answer {
+	display: none;
+	color: hsl(240, 6%, 50%);
+}
+
+.answer.open {
+	display: block;
+}
+
+.arrow {
+	height: 10px;
+}
+
+.rotate {
+	transform: rotate(180deg);
+}
