@@ -5,7 +5,7 @@ body {
   background-image: linear-gradient(to bottom, #af67e9, #6565e7);
   background-repeat: no-repeat;
   background-size: cover;
-  font-family: "Kumbh Sans", sans-serif;
+  font-family: 'Kumbh Sans', sans-serif;
   height: 100vh;
 }
 
@@ -15,19 +15,27 @@ body {
 
 .feature__img {
   position: absolute;
-  top: 2%;
-  left: 46%;
-  width: 300px;
+  top: 4%;
+  left: 48%;
+  max-width: 300px;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
 }
 
+.feature__img__desktop {
+  display: none;
+}
+
+.feature__img__box {
+  display: none;
+}
+
 .faq {
-  width: 80%;
-  background-color: white;
+  width: 300px;
+  background: white;
   border-radius: 20px;
-  margin: 8em auto 1em auto;
-  padding: 5em 1em 1em 1em;
+  margin: 10em auto 1em auto;
+  padding: 7em 1em 1em 1em;
 }
 
 .faq__title {
@@ -71,5 +79,55 @@ body {
 .rotate {
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
+}
+
+@media screen and (min-width: 1000px) {
+  .feature__img {
+    display: none;
+  }
+  .feature__img__box {
+    z-index: 2;
+    position: relative;
+    display: block;
+    left: -36%;
+    top: 32%;
+  }
+  .faq {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    width: 800px;
+    margin: 10em auto 1em auto;
+    padding: 5em 3em 1em 3em;
+    background: rgba(255, 255, 255, 0.9);
+    background-image: url("/images/illustration-woman-online-desktop.svg"), url("/images/bg-pattern-desktop.svg");
+    background-repeat: no-repeat;
+    background-position-x: -20%, 900%;
+    background-position-y: 50%, 50%;
+  }
+  .faq__container {
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-column: 2/3;
+  }
+  .faq__title {
+    text-align: left;
+  }
+  .question {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin: 3em 0;
+    -webkit-transition: color 0.5s ease;
+    transition: color 0.5s ease;
+    cursor: pointer;
+  }
+  .question:hover {
+    color: #f47c57;
+  }
 }
 /*# sourceMappingURL=styles.css.map */
