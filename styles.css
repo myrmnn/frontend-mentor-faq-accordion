@@ -91,6 +91,9 @@ body {
 }
 
 @media screen and (min-width: 1000px) {
+  .shadow {
+    display: none;
+  }
   .feature__img {
     display: none;
   }
