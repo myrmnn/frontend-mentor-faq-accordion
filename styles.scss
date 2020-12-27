@@ -41,6 +41,7 @@ body {
 
 	&__title {
 		text-align: center;
+		font-weight: 900;
 	}
 }
 
@@ -91,14 +92,14 @@ body {
 		display: grid;
 		grid-template-columns: 1fr 1fr;
 		width: 800px;
-		margin: 10em auto 1em auto;
+		margin: 9em auto 1em auto;
 		padding: 5em 3em 1em 3em;
 		background: rgba(255, 255, 255, 0.9);
 		background-image: url('/images/illustration-woman-online-desktop.svg'),
 			url('/images/bg-pattern-desktop.svg');
 		background-repeat: no-repeat;
 		background-position-x: -20%, 900%;
-		background-position-y: 50%, 50%;
+		background-position-y: 50%, 60%;
 
 		&__container {
 			grid-column: 2/3;
